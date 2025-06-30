@@ -1,8 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
-const dev = process.env.NODE_ENV === 'development';
-
 export default {
   kit: {
     adapter: adapter({
@@ -11,9 +9,8 @@ export default {
       fallback: null
     }),
     paths: {
-      base: dev ? '' : '/rithikayy.github.io'
-    },
-    appDir: '_app' // optional but helps match GH paths
+      base: process.env.NODE_ENV === 'production' ? '/rithikayy.github.io' : ''
+    }
   },
   preprocess: preprocess()
 };
