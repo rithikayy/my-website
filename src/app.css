@@ -2,7 +2,7 @@
 
 Optional override
 body {
-  /* font-family: 'Syne Mono', monospace; */
+  font-family: 'Syne Mono', monospace;
   background-color: #faf5ee;
   color: #4e2f1c;
   margin: 0;

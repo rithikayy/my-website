@@ -9,7 +9,7 @@ export default {
       fallback: null
     }),
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/rithikayy.github.io' : ''
+      base: '' // ← must be empty string!
     }
   },
   preprocess: preprocess()
