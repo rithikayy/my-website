@@ -1,1 +1,0 @@
-import"../chunks/CWj6FrbW.js";import"../chunks/B3EzXpvw.js";import{f as o,a as t}from"../chunks/DZc3EgBk.js";var a=o('<header style="background: pink; color: white; text-align: center;"><h1>🌺 Testing!! 🌺</h1></header>');function h(e){var r=a();t(e,r)}export{h as component};
