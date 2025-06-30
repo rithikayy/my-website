@@ -9,8 +9,9 @@ export default {
       fallback: null
     }),
     paths: {
-      base: '' 
-    }
+      base: '' // ✅ for rithikayy.github.io (user site)
+    },
   },
   preprocess: preprocess()
 };
+
