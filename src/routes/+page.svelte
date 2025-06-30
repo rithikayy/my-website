@@ -2,6 +2,8 @@
     let name = "Rithika";
   </script>
   
-  <h1>Hi!</h1>
+  <header style="background: pink; color: white; text-align: center;">
+    <h1>🌺 Testing!! 🌺</h1>
+  </header>
   
   

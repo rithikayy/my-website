@@ -1,6 +1,12 @@
+/* ✅ Import Google Fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Syne+Mono&display=swap');
+
+/* ✅ Then import Tailwind */
 @import "tailwindcss";
 
+/* (Optional) your custom styles */
 body {
-    font-family: 'Syne Mono', monospace;
-  }
+  font-family: 'Syne Mono', monospace;
+}
+
   
