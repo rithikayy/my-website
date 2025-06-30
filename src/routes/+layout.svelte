@@ -20,10 +20,18 @@
     color: rgb(78, 47, 28);
   }
 
-  header {
+  :global(header) {
     font-family: 'Martian Mono', monospace;
+    background: pink;
+    color: white;
+    text-align: center;
+  }
+
+  :global(h1), :global(p) {
+    margin: 1rem;
   }
 </style>
+
 
 
   
