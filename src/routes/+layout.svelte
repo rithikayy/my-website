@@ -13,7 +13,7 @@
 
 <style>
   :global(body) {
-    font-family: 'Syne Mono', monospace;
+    /* font-family: 'Syne Mono', monospace; */
     margin: 0;
     padding: 0;
     background-color: rgb(250, 245, 238);
@@ -21,7 +21,7 @@
   }
 
   :global(header) {
-    font-family: 'Martian Mono', monospace;
+    /* font-family: 'Martian Mono', monospace; */
     background: pink;
     color: white;
     text-align: center;
