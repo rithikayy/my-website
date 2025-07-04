@@ -13,20 +13,25 @@
 		  href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Syne+Mono&display=swap"
 		  rel="stylesheet"
 		/>
-		<link rel="icon" href="%sveltekit.assets%/cherry logo.png" />
+		<link rel="icon" href="%sveltekit.assets%/main-cherry-website.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	  </head>
 	  <script src="/sakura.js"></script>
 	  <script>
 		window.addEventListener('DOMContentLoaded', () => {
-		  new Sakura('body', {
-			delay: 700,
-			fallSpeed: 3,
-			maxSize: 14,
-			minSize: 10,
-			lifeTime: 10
-		  });
+			new Sakura('body', {
+				delay: 700,     
+				fallSpeed: 3,  
+				maxSize: 14,
+				minSize: 10,
+				lifeTime: 5000, 
+				startX: 0,   
+				endX: window.innerWidth, 
+				startY: 0,     
+				endY: 0       
+				});
+
 		});
 	  </script>
 	<body data-sveltekit-preload-data="hover">
