@@ -6,6 +6,7 @@
 		  rel="stylesheet"
 		  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 		/>
+		<!-- Source for sakura petals falling: https://github.com/jhammann/sakura -->
 		<link rel="stylesheet" href="%sveltekit.assets%/sakura.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,14 +23,10 @@
 		window.addEventListener('DOMContentLoaded', () => {
 			new Sakura('body', {
 				delay: 700,     
-				fallSpeed: 3,  
+				fallSpeed: 4,  
 				maxSize: 14,
 				minSize: 10,
-				lifeTime: 5000, 
-				startX: 0,   
-				endX: window.innerWidth, 
-				startY: 0,     
-				endY: 0       
+				lifeTime: 50000   
 				});
 
 		});
