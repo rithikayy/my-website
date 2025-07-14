@@ -37,7 +37,8 @@ function aboutMe() {
 
 <div id="aboutme" class="h-screen flex flex-row items-center justify-center bg-[#faf5ee] px-10 gap-10">
   <div class="flex-shrink-0">
-    <img src="/your-photo.jpg" alt="a photo of me!" class="rounded-full w-64 h-64 object-cover dark:focus:ring-red-200/50 shadow-lg shadow-rose-300/50 dark:shadow-lg dark:shadow-red-200/80 transition-transform duration-700 hover:scale-105" />
+    <!-- svelte-ignore a11y_img_redundant_alt -->
+    <img src="/my-pic.jpg" alt="a photo of me!" class="rounded-full w-64 h-64 object-cover dark:focus:ring-red-200/50 shadow-lg shadow-rose-300/50 dark:shadow-lg dark:shadow-red-200/80 transition-transform duration-700 hover:scale-105" />
   </div>
 
   <!-- RIGHT: Text -->
