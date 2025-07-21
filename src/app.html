@@ -21,13 +21,14 @@
 	  <script src="/sakura.js"></script>
 	  <script>
 		window.addEventListener('DOMContentLoaded', () => {
-			new Sakura(document.documentElement, {
-				delay: 700,
-				fallSpeed: 2,
+			new Sakura('body', {
+				delay: 700,     
+				fallSpeed: 2,  
 				maxSize: 14,
 				minSize: 10,
-				lifeTime: 50000
-			});
+				lifeTime: 50000   
+				});
+
 		});
 	  </script>
 	<body data-sveltekit-preload-data="hover">
