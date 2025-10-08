@@ -19,38 +19,43 @@
   }
 </script>
 
-<div class="relative text-center p-1">
-  <img 
-    src="/imgs/branch.png" 
-    alt="cherry blossom branch" 
-    class="w-120 -mt-23 h-auto ml-111"
-  />
-  <img 
-    src="/imgs/flower1.png" 
-    alt="flower detail" 
-    class="absolute cursor-pointer top-[25px] left-[590px] w-[180px] h-auto transition-transform duration-900 ease-in-out hover:scale-115 active:rotate-[360deg]"
-    />
+<div class="relative text-center p-1"> 
+  <img src="/imgs/branch.png" alt="cherry blossom branch" class="w-120 -mt-23 h-auto ml-111" 
+  /> 
+  
+  
+  <button on:click={aboutMe} data-tooltip-target="aboutme-hover" data-tooltip-placement="bottom" class="absolute cursor-pointer top-[25px] left-[590px] w-[180px] h-auto transition-transform duration-900 ease-in-out hover:scale-115 active:rotate-[360deg] p-0 bg-transparent border-none" > 
+    <img src="/imgs/flower1.png" alt="flower detail" class="w-full h-auto" /> 
+  </button> 
+  
+  <div id="aboutme-hover" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" > 
+    About me!
+    <div class="tooltip-arrow" data-popper-arrow></div> 
+  </div>
 
-    <img 
-    src="/imgs/flower2.png" 
-    alt="flower detail" 
-    class="absolute cursor-pointer top-[128px] left-[610px] w-[150px] h-auto transition-transform duration-900 ease-in-out hover:scale-115 active:rotate-[360deg]"
-    />
+    <button on:click={projects} data-tooltip-target="projects-hover" data-tooltip-placement="bottom" class="absolute cursor-pointer top-[128px] left-[610px] w-[150px] h-auto transition-transform duration-1500 ease-in-out hover:scale-115 active:rotate-[360deg] p-0 bg-transparent border-none" > 
+      <img src="/imgs/flower2.png" alt="flower detail" class="w-full h-auto" /> 
+    </button>
 
-    <img 
-    src="/imgs/flower3.png" 
-    alt="flower detail" 
-    class="absolute cursor-pointer top-[110px] left-[762px] w-[150px] h-auto transition-transform duration-900 ease-in-out hover:scale-115 active:rotate-[360deg]"
-    />
+    <div id="projects-hover" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-300" > 
+      My Projects
+      <div class="tooltip-arrow" data-popper-arrow></div> 
+    </div>
+
+
+    <button on:click={skills} data-tooltip-target="skills-hover" data-tooltip-placement="bottom" class="absolute cursor-pointer top-[110px] left-[762px] w-[150px] h-auto transition-transform duration-900 ease-in-out hover:scale-115 active:rotate-[360deg] p-0 bg-transparent border-none" > 
+      <img src="/imgs/flower3.png" alt="flower detail" class="w-full h-auto" /> 
+    </button>
+
+    <div id="skills-hover" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-300" > 
+      Skills
+      <div class="tooltip-arrow" data-popper-arrow></div> 
+    </div>
 </div>
-
-<button on:click={aboutMe} class="cursor-pointer inline-flex h-10 items-center justify-center rounded-md text-amber-900 bg-gradient-to-r from-amber-100 via-orange-100 to-orange-200 hover:bg-gradient-to-br focus:ring-0 focus:outline-none focus:ring-rose-200 dark:focus:ring-red-200/50 shadow-lg shadow-rose-300/50 dark:shadow-lg dark:shadow-red-200/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transition active:scale-110">About Me</button>
-<button on:click={projects} class="cursor-pointer inline-flex h-10 items-center justify-center rounded-md text-amber-900 bg-gradient-to-r from-amber-100 via-orange-100 to-orange-200 hover:bg-gradient-to-br focus:ring-0 focus:outline-none focus:ring-rose-200 dark:focus:ring-red-200/50 shadow-lg shadow-rose-300/50 dark:shadow-lg dark:shadow-red-200/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transition active:scale-110">Projects</button>
-<button on:click={skills} class="cursor-pointer inline-flex h-10 items-center justify-center rounded-md text-amber-900 bg-gradient-to-r from-amber-100 via-orange-100 to-orange-200 hover:bg-gradient-to-br focus:ring-0 focus:outline-none focus:ring-rose-200 dark:focus:ring-red-200/50 shadow-lg shadow-rose-300/50 dark:shadow-lg dark:shadow-red-200/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transition active:scale-110">Skills</button>
 
 <div id="aboutme">
   <BorderBar/>
-  <div class="h-[600px] flex flex-row items-center justify-center bg-[#f7efe4] px-10 gap-10">
+  <div class="h-[600px] flex flex-row items-center justify-center bg-[#faf8f5] px-10 gap-10">
     <div class="relative flex-shrink-0">
       <!-- svelte-ignore a11y_img_redundant_alt -->
       <img src="/imgs/mypic1.JPG" alt="a photo of me!" class="rounded-lg max-w-lg h-80 object-cover dark:focus:ring-rose-400/50 shadow-lg shadow-rose-400/50 dark:shadow-lg dark:shadow-rose-400/8" />
@@ -77,7 +82,7 @@
   <BorderBar/>
 </div>
 
-<div id="projects" class="h-100vh flex flex-col bg-[#f7efe4] px-10 py-10 gap-10">
+<div id="projects" class="h-100vh flex flex-col bg-[#faf8f5] px-10 py-10 gap-10">
   <h1 class="text-3xl font-bold text-center">Featured Projects</h1>
 
   <div class="flex flex-row justify-center gap-10 pt-3">
@@ -125,7 +130,7 @@
 <BorderBar/>
 
 
-<div id="skills" class="flex flex-col bg-[#f7efe4] px-10 py-10 gap-10">
+<div id="skills" class="flex flex-col bg-[#faf8f5] px-10 py-10 gap-10">
   <h1 class="text-3xl font-bold text-center">Skills</h1>
   <div class="mt-4 text-justify border-2 border-none rounded-xl p-6 transition-transform duration-700 hover:scale-102 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-300/50 shadow-lg shadow-rose-300/50" style="font-size: 0.925rem;">
     <h2 class="font-semibold text-lg">Languages</h2>
